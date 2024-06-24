@@ -1,7 +1,13 @@
-let num = 7;
+//Run this code first and examine the error message.
+//Fix the syntax error then run the code again to check your work.
 
-if (num % 2 === 0) {
-    if (num % 2 === 1) {
-        console.log("odd");
-    }
+let launchReady = false;
+let fuelLevel = 17000;
+
+if (fuelLevel >= 20000) {
+   console.log('Fuel level cleared.');
+   launchReady = true;
+} else {
+   console.log('WARNING: Insufficient fuel!');
+   launchReady = false;
 }
