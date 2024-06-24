@@ -2,7 +2,8 @@
 // Run the code and examine the output. 
 
 // Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false?
-// Is the program behaving as expected?
+// Is the program behaving as expected? NO
+
 
 let launchReady = false;
 let fuelLevel = 17000;
@@ -26,8 +27,16 @@ if (crewStatus && computerStatus === 'green'){
    console.log('WARNING: Crew or computer not ready!');
    launchReady = false;
 }
-
 console.log("launchReady = ", launchReady);
+
+
+if (fuelLevel >= 20000 && crewStatus === true && computerStatus === 'green'){
+   launchReady = true
+} else {
+   launchReady = false
+}
+
+console.log("launchReady after final revision= ", launchReady);
 
 // if (launchReady) {
 //    console.log('10, 9, 8, 7, 6, 5, 4, 3, 2, 1...');
