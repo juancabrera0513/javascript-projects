@@ -1,5 +1,8 @@
-// Experiment with this loop by modifying each of the following: the variable initialization, the boolean condition, and the update expression.
+let n = 6;
+let total = 0;
 
-for (let i = 0; i < 51; i++) {
-   console.log(i);
- }
+for (let i = 0; i <= n; i++) {
+   total += i;
+}
+
+console.log(total);
