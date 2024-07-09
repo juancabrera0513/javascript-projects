@@ -62,6 +62,8 @@ function completeReversal(arr){
 let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
+console.log(completeReversal(arrayTest1))
+console.log(completeReversal(arrayTest2))
 console.log(completeReversal(arrayTest3))
 
 // Bonus Missions
