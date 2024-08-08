@@ -5,4 +5,27 @@ let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
 
 //Sort each array in ascending order.
 
-//Sort each array in decending order.
+nums1.sort((a,b) => (a-b))
+nums2.sort((a,b) => (a-b))
+nums3.sort((a,b) => (a-b))
+
+
+
+console.log(nums1)
+console.log(nums2)
+console.log(nums3)
+
+
+
+//Sort each array in descending order.
+
+nums1.sort((a,b) => (b-a))
+nums2.sort((a,b) => (b-a))
+nums3.sort((a,b) => (b-a))
+
+
+
+console.log(nums1)
+console.log(nums2)
+console.log(nums3)
+
