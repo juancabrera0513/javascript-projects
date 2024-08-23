@@ -1,12 +1,22 @@
 // Code your crewMass function here:
-
+const crewMass = (crew) => {
+  let totalMass = 0;
+  for (let i = 0; i < crew.length; i++) {
+    totalMass += crew[i].mass;
+    totalMass.toFixed(1)
+  }
+  return totalMass;
+};
 
 // Code your fuelRequired function here:
 
+const fuelRequired = (mass) => {
+  const fuelPerKg = 9.5; 
+  return mass * fuelPerKg };
 
-// The pre-selected crew is in the array at the end of this file.
-// Feel free to add, remove, or switch crew members as you see fit.
-
+  // The pre-selected crew is in the array at the end of this file.
+  // Feel free to add, remove, or switch crew members as you see fit.
+  
 let candidateA = {
    'name':'Gordon Shumway',
    'species':'alf',
@@ -52,3 +62,7 @@ let candidateA = {
  
  let crew = [candidateB,candidateD,candidateF];
  
+ const totalMass = crewMass(crew)
+ const totalFuel = fuelRequired(totalMass)
+
+ console.log(totalFuel)
